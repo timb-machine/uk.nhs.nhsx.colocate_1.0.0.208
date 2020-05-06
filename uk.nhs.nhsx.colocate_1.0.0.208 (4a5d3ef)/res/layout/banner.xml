@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/logo" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/APKTOOL_DUMMY_ae" android:contentDescription="@null" android:layout_marginEnd="16.0dip" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/app_title" android:layout_weight="1.0" />
+            <ImageButton android:layout_gravity="end" android:id="@id/toolbar_info" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="@string/info" app:srcCompat="@drawable/ic_info" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>

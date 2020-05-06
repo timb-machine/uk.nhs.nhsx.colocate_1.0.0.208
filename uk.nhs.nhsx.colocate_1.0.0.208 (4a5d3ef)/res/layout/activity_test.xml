@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/for_debug_purposes_only" />
+    <TextView android:id="@id/sonar_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="" />
+    <TextView android:id="@id/no_events" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="No events recorded." />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/events" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/continue_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Continue" />
+        <Button android:id="@id/reset_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset" />
+        <Button android:id="@id/exportButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Export" />
+    </LinearLayout>
+</LinearLayout>

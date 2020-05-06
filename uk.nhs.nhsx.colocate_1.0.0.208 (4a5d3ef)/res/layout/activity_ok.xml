@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" layout="@layout/banner" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <uk.nhs.nhsx.sonar.android.app.status.RegistrationProgressPanel android:id="@id/registrationPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView android:id="@id/status_initial" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip" style="@style/PrimaryCard">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/initial_card_background" android:paddingTop="32.0dip" android:paddingBottom="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="28.0dip" android:paddingEnd="24.0dip">
+                        <TextView android:id="@id/status_initial_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/status_initial_title" android:accessibilityHeading="true" style="@style/TextViewStatus" />
+                        <TextView android:id="@id/latest_advice_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/status_latest_advice" style="@style/TextViewSubStatus" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <TextView android:id="@id/status_today_feeling" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/status_today_feeling" android:layout_marginHorizontal="16.0dip" android:accessibilityHeading="true" style="@style/TextViewSubHead" />
+                <com.google.android.material.card.MaterialCardView android:enabled="false" android:id="@id/status_not_feeling_well" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:accessibilityHeading="true" style="@style/PrimaryCard">
+                    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="24.0dip" android:paddingRight="16.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:paddingVertical="24.0dip">
+                        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/status_not_feeling_well" android:drawableEnd="@drawable/ic_keyboard_arrow_right_24dp" style="@style/TextViewActionTitle" />
+                        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/status_not_feeling_well_desc" style="@style/TextViewActionSubTitle" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <TextView android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/status_description_01" android:paddingHorizontal="16.0dip" style="@style/TextViewStatusSubTittle" />
+                <include layout="@layout/status_footer_view" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

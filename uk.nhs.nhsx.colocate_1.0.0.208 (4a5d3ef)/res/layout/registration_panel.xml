@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:layout_gravity="center_vertical" android:id="@id/registrationProgressBar" android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminate="true" app:mpb_indeterminateTint="@color/black" app:mpb_useIntrinsicPadding="false" style="@style/Widget.MaterialProgressBar.ProgressBar" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/registrationStatusIcon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_warning_outline" android:contentDescription="@null" />
+    <TextView android:textSize="14.0sp" android:layout_gravity="center_vertical" android:id="@id/registrationStatusText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/registration_finalising_setup" android:layout_marginStart="32.0dip" android:accessibilityLiveRegion="polite" />
+</merge>

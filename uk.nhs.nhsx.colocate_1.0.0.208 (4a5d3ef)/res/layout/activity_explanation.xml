@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip">
+            <TextView android:id="@id/explanation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:layout_marginBottom="24.0dip" android:text="@string/explanation_title" android:accessibilityHeading="true" style="@style/OnboardingTitle" />
+            <TextView android:textSize="16.0sp" android:id="@id/explanationHow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2" />
+        </LinearLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|center|top" android:id="@id/explanation_back" android:background="?selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/ic_baseline_close_24" android:scaleType="center" android:contentDescription="@string/go_back" />
+</FrameLayout>

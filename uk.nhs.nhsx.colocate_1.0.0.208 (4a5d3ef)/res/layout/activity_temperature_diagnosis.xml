@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/symptom_banner" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/confirm_diagnosis" android:layout_below="@id/logo">
+        <RelativeLayout android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_sub_title" android:id="@id/progress" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/progress_one_third" android:fontFamily="@font/roboto_medium" android:letterSpacing="0.1" />
+            <TextView android:id="@id/temperature_question" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/temperature_question" android:layout_below="@id/progress" android:accessibilityHeading="true" style="@style/TextViewSubHead" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_sub_title" android:id="@id/temperature_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/temperature_description" android:layout_below="@id/temperature_question" />
+            <TextView android:id="@id/radio_selection_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/radio_button_temperature_error" android:layout_below="@id/temperature_description" android:labelFor="@id/temperature_diagnosis_answer" style="@style/TextViewError" />
+            <RadioGroup android:id="@id/temperature_diagnosis_answer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/radio_selection_error">
+                <RadioButton android:textSize="16.0sp" android:id="@id/yes" android:background="@drawable/radio_button_background_selector" android:layout_width="fill_parent" android:layout_height="88.0dip" android:layout_marginBottom="8.0dip" android:button="@drawable/radio_button_inset" android:text="@string/yes_temperature" android:fontFamily="@font/roboto_medium" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+                <RadioButton android:textSize="16.0sp" android:id="@id/no" android:background="@drawable/radio_button_background_selector" android:layout_width="fill_parent" android:layout_height="88.0dip" android:button="@drawable/radio_button_inset" android:text="@string/no_temperature" android:fontFamily="@font/roboto_medium" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+            </RadioGroup>
+        </RelativeLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/confirm_diagnosis" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/continue_button" android:layout_alignParentBottom="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/PrimaryButton" />
+</RelativeLayout>

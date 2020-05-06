@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/symptom_banner" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/submit_diagnosis" android:layout_below="@id/logo">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_sub_title" android:id="@id/progress" android:paddingTop="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/progress_three_thirds" android:contentDescription="@string/page_3_of_3" android:fontFamily="@font/roboto_medium" android:letterSpacing="0.1" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/check_answers" android:accessibilityHeading="true" style="@style/TextViewSubHead" />
+            <View android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" style="@style/HorizontalDivider" />
+            <TextView android:textSize="16.0sp" android:id="@id/review_answer_temperature" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/i_do_not_temperature" android:fontFamily="@font/roboto_medium" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+            <View android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" style="@style/HorizontalDivider" />
+            <TextView android:textSize="16.0sp" android:id="@id/review_answer_cough" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/i_do_cough" android:fontFamily="@font/roboto_medium" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+            <View android:layout_marginTop="12.0dip" android:layout_marginBottom="48.0dip" style="@style/HorizontalDivider" />
+            <TextView android:id="@id/symptoms_date_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/symptoms_date_prompt_cough" android:accessibilityHeading="true" style="@style/TextViewSubHead" />
+            <TextView android:id="@id/date_selection_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/date_selection_error" android:labelFor="@id/symptoms_date_spinner" style="@style/TextViewError" />
+            <Spinner android:id="@id/symptoms_date_spinner" android:background="@drawable/spinner_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/submit_diagnosis" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/continue_button" android:layout_alignParentBottom="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/PrimaryButton" />
+</RelativeLayout>

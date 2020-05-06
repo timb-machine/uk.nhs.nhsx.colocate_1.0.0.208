@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/symptom_banner" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/close_review_btn" android:layout_below="@id/logo">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/text_sub_title" android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/progress_three_thirds" android:contentDescription="@string/page_3_of_3" android:fontFamily="@font/roboto_medium" android:letterSpacing="0.1" android:layout_marginHorizontal="16.0dip" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/you_do_not_have_symptoms" android:layout_marginHorizontal="16.0dip" style="@style/TextViewSubHead" />
+            <TextView android:textSize="16.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:text="@string/if_showing_other_symptoms" android:layout_marginHorizontal="16.0dip" style="@style/TextViewActionSubTitle" />
+            <TextView android:id="@id/nhs_service" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/nhs_111_online_service" android:layout_marginHorizontal="16.0dip" style="@style/TextViewLink02" />
+        </LinearLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/close_review_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/close" android:layout_alignParentBottom="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/PrimaryButton" />
+</RelativeLayout>
